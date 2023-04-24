@@ -24,7 +24,7 @@ for line in [l.rstrip() for l in f.readlines()]:
             print("Não há números o suficiente para executar as operações, o último valor calculado foi: "+str(stack.pop()))
             break
     except Exception as error:
-        print(error)         
+        raise Exception(error)  
     
 
 if(len(stack) == 1):
